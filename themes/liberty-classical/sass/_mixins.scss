@@ -1,0 +1,66 @@
+@mixin transitions($speed:$default-speed) {
+  -o-transition: all $speed ease-in-out;
+  -ms-transition: all $speed ease-in-out;
+  -webkit-transition: all $speed ease-in-out;
+  -moz-transition: all $speed ease-in-out;
+  transition: all $speed ease-in-out;
+}
+
+@mixin hyperlink() {
+  border-bottom:3px solid $primary;
+  color:$dark-gray;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    color:$primary;
+    border-color:$dark-gray;
+  }
+}
+
+
+@mixin button() {
+  background-color: var(--primary-500);
+  border:none;
+  border-radius:$border-radius-lg;
+  color:var(--primary-500-opposite);
+  font-weight: 500;
+  line-height: 1;
+  padding:1em 1.25em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @include transitions(150ms);
+
+ 
+
+  &:hover {
+    border-radius:$border-radius-sm;
+    box-shadow:$box-shadow;
+    color:var(--primary-500-opposite);
+    cursor:pointer;
+    text-decoration: none;
+    transform:scale(1.05);
+  }
+}
+
+@mixin header_font_sizes($size) {
+
+  &.has-small-font-size { font-size:($size * .65); }
+  &.has-normal-font-size {}
+  &.has-medium-font-size { font-size:($size * 1.2); }
+  &.has-large-font-size { font-size:($size * 1.4); }
+  &.has-huge-font-size { font-size:($size * 1.6); }
+
+}
+
+@mixin header_font_sizes_mobile($size) {
+
+  &.has-small-font-size { font-size:($size * .75); }
+  &.has-normal-font-size {}
+  &.has-medium-font-size { font-size:($size * 1.1); }
+  &.has-large-font-size { font-size:($size * 1.2); }
+  &.has-huge-font-size { font-size:($size * 1.3); }
+
+}

@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "STARTER 🛑 Group Callout",
+  "content": "<!-- wp:group {\"backgroundColor\":\"light\",\"className\":\"ccc-group\"} -->\n<div class=\"wp-block-group ccc-group has-light-background-color has-background\"><!-- wp:heading -->\n<h2>Here is a Heading</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Fusce id dui est. Vivamus malesuada tortor elit, eu consectetur odio rutrum a. Vivamus tincidunt justo nec neque convallis malesuada. Sed accumsan turpis massa, eget pellentesque nulla dignissim vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue felis et tellus venenatis.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons -->\n<div class=\"wp-block-buttons\"><!-- wp:button {\"fontSize\":\"small\"} -->\n<div class=\"wp-block-button has-custom-font-size has-small-font-size\"><a class=\"wp-block-button__link\">Let's Do This!</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:group -->"
+}

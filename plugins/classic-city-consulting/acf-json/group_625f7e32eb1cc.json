@@ -1,0 +1,44 @@
+{
+    "key": "group_625f7e32eb1cc",
+    "title": "Theme: Wireframe",
+    "fields": [
+        {
+            "key": "field_625f7e396b81c",
+            "label": "Is Wireframe",
+            "name": "is_wireframe",
+            "type": "true_false",
+            "instructions": "Toggle this to ON if we are actively wireframing the site and want some default styles added to the site",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Wireframe",
+            "ui_off_text": "Nothing"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "ccc-theme-style-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1650510991
+}

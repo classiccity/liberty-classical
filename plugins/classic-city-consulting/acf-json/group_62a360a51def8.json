@@ -1,0 +1,84 @@
+{
+    "key": "group_62a360a51def8",
+    "title": "Icon List",
+    "fields": [
+        {
+            "key": "field_62a360aee5c78",
+            "label": "Icon List",
+            "name": "icon_list",
+            "type": "repeater",
+            "instructions": "These are the icons that will show up if you use the *Icon List* block. Go to FontAwesome.com, do a search for an icon (maybe sure version 5.x is selected), and paste in the icon's HTML code into the field)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Icon",
+            "sub_fields": [
+                {
+                    "key": "field_62a360d9e5c79",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "<i class=\"fas fa-rocket-launch\"><\/i>",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62a36110e5c7a",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "ccc-theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1654874398
+}

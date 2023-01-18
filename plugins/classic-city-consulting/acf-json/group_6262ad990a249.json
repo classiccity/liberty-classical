@@ -1,0 +1,158 @@
+{
+    "key": "group_6262ad990a249",
+    "title": "Theme: General Styles",
+    "fields": [
+        {
+            "key": "field_6262ada1354da",
+            "label": "Shadows",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6262adac354db",
+            "label": "Shadow",
+            "name": "shadow",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "4px 4px 20px rgba(0,0,0,.1)",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6262edd39102d",
+            "label": "Hero",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6262edd99102e",
+            "label": "Vertical Padding",
+            "name": "hero_vertical_padding",
+            "type": "ccc_acf_spacing",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "medium",
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_6262ef7e0b061",
+            "label": "Horizontal Padding",
+            "name": "hero_horizontal_padding",
+            "type": "ccc_acf_spacing",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "medium",
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_6262ede39102f",
+            "label": "Margin Bottom",
+            "name": "hero_margin_bottom",
+            "type": "ccc_acf_spacing",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "default_value": "gap",
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_6262f0d9ae0b3",
+            "label": "Opacity",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6262f0e1ae0b4",
+            "label": "Opacity",
+            "name": "opacity",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ".15",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "ccc-theme-style-settings"
+            }
+        ]
+    ],
+    "menu_order": 20,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1650651379
+}

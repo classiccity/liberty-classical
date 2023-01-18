@@ -1,0 +1,211 @@
+{
+    "key": "group_625e9816b22e7",
+    "title": "Theme: Colors",
+    "fields": [
+        {
+            "key": "field_625e981ca6a50",
+            "label": "Primary",
+            "name": "primary",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6262e59e35c9a",
+            "label": "Primary Opposite",
+            "name": "primary_opposite",
+            "type": "ccc_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_625e9824a6a51",
+            "label": "Secondary",
+            "name": "secondary",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6262e5b135c9b",
+            "label": "Secondary Opposite",
+            "name": "secondary_opposite",
+            "type": "ccc_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_625e9838a6a52",
+            "label": "Dark",
+            "name": "dark",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6262e5d0f661c",
+            "label": "Dark Opposite",
+            "name": "dark_opposite",
+            "type": "ccc_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_625e9840a6a53",
+            "label": "Light",
+            "name": "light",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6262e5d9f661d",
+            "label": "Light Opposite",
+            "name": "light_opposite",
+            "type": "ccc_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_6260c8040e234",
+            "label": "Foreground",
+            "name": "foreground",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6262e5e8f661e",
+            "label": "Foreground Opposite",
+            "name": "foreground_opposite",
+            "type": "ccc_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_6260c8100e235",
+            "label": "Background",
+            "name": "background",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6262e5f1f661f",
+            "label": "Background Opposite",
+            "name": "background_opposite",
+            "type": "ccc_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "ccc-theme-style-settings"
+            }
+        ]
+    ],
+    "menu_order": 10,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1650648578
+}

@@ -1,0 +1,40 @@
+.is-hero,
+.#{$ns}hero {
+
+  $self: &;
+
+  padding: calc(var(--navbar-height) + 5rem) 0 5rem 0;
+
+  .wp-block-buttons {
+    margin-top: 2rem;
+  }
+
+  &.is-large {
+    padding: calc(var(--navbar-height) + 7rem) 0 7rem 0;
+  }
+
+  &.has-overlay {
+    #{$self}__overlay {
+      height:100%;
+      left: 0;
+      opacity:.9;
+      position: absolute;
+      top: 0;
+      width:100%;
+      z-index: 1;
+    }
+
+    #{$self}__content {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+
+  &.is-simple {
+    border-bottom-left-radius:$border-radius-md;
+    border-bottom-right-radius:$border-radius-md;
+    min-height:0;
+    overflow:hidden;
+  }
+}

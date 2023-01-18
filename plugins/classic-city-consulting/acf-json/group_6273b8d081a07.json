@@ -1,0 +1,92 @@
+{
+    "key": "group_6273b8d081a07",
+    "title": "Theme: Logo",
+    "fields": [
+        {
+            "key": "field_6273b8db39f23",
+            "label": "SVG",
+            "name": "svg_logo",
+            "type": "textarea",
+            "instructions": "Copy\/paste SVG code for your company logo here",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_6273b8f639f24",
+            "label": "Light",
+            "name": "light_logo",
+            "type": "image",
+            "instructions": "Upload a \"light\" version of your logo to be used on Darker backgrounds",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6273b90839f25",
+            "label": "Dark",
+            "name": "dark_logo",
+            "type": "image",
+            "instructions": "Upload a \"dark\" version of your logo to be used on lighter backgrounds",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "ccc-theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651751208
+}

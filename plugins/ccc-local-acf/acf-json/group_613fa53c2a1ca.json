@@ -1,0 +1,102 @@
+{
+    "key": "group_613fa53c2a1ca",
+    "title": "Icon Links",
+    "fields": [
+        {
+            "key": "field_613fa542b2859",
+            "label": "Icon Links",
+            "name": "icon_links",
+            "type": "repeater",
+            "instructions": "List of icons and where they should link to (mostly used for social media icons)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "New Icon",
+            "sub_fields": [
+                {
+                    "key": "field_613fa552b285a",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "text",
+                    "instructions": "HTML icon from FontAwesome",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "<i class=\"fal fa-rocket\"><\/i>",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_613fa580b285b",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "text",
+                    "instructions": "URL for the icon to go to",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_613fa598b285c",
+                    "label": "New Window?",
+                    "name": "new_window",
+                    "type": "true_false",
+                    "instructions": "Should the link open in a new window\/tab?",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 1,
+                    "ui": 1,
+                    "ui_on_text": "New",
+                    "ui_off_text": "Same"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "lotj-theme-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1631561225
+}

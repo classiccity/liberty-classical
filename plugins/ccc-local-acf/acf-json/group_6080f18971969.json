@@ -1,0 +1,412 @@
+{
+    "key": "group_6080f18971969",
+    "title": "Core Page",
+    "fields": [
+        {
+            "key": "field_61814732295a8",
+            "label": "Page-Level",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_609691d58a30e",
+            "label": "Extra CSS Classes",
+            "name": "extra_css_classes",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61814b1e9671e",
+            "label": "Colors Info",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "If you select *nothing* for these fields, it will automatically pull colors from the parent-level pages. We recommend *only* setting colors at the parent-most-level page and not on sub-pages",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_61814717295a7",
+            "label": "Primary",
+            "name": "primary",
+            "type": "gp_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_61814747295a9",
+            "label": "Accent",
+            "name": "accent",
+            "type": "gp_acf_color",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_618146eb295a6",
+            "label": "Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6080f1969e00d",
+            "label": "Turn Off Hero",
+            "name": "turn_off_hero",
+            "type": "true_false",
+            "instructions": "Toggle this to HIDE to remove the core hero section from the page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Hide",
+            "ui_off_text": "Show"
+        },
+        {
+            "key": "field_61729da34e37b",
+            "label": "Style",
+            "name": "style",
+            "type": "select",
+            "instructions": "Select which style to utilize",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6080f1969e00d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "simple": "Simple",
+                "double-image": "Double Image",
+                "contained": "Contained",
+                "two-column": "Two Column",
+                "full-height-video": "Full-Height Video"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_61729ebb4e37c",
+            "label": "Title Override",
+            "name": "title_override",
+            "type": "text",
+            "instructions": "By default, we'll use the Page\/Post Title for the hero section. The words in this box will override the title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6080f1969e00d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61729f6dd20a6",
+            "label": "Subtitle",
+            "name": "subtitle",
+            "type": "text",
+            "instructions": "The short \"description\" attached to the title",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6080f1969e00d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6080f1c69e00e",
+            "label": "Hero Background Color",
+            "name": "hero_background_color",
+            "type": "select",
+            "instructions": "Choose the background color",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6080f1969e00d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "primary-light": "Primary",
+                "maroon-dark": "Maroon",
+                "lake-dark": "Lake",
+                "leaf-dark": "Leaf"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6080f2229e00f",
+            "label": "Hero Description",
+            "name": "hero_description",
+            "type": "text",
+            "instructions": "Text to go under the H1 tag",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6080f1969e00d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_609691de8a30f",
+            "label": "Ninja Forms ID",
+            "name": "ninja_forms_id",
+            "type": "number",
+            "instructions": "If you want to place a Ninja Form in the hero section, just type in the ID here and the code will do the rest of the magic",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "[ninja_form id=",
+            "append": "]",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_6172a1890859c",
+            "label": "Buttons",
+            "name": "buttons",
+            "type": "repeater",
+            "instructions": "Add as many buttons as you'd like",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6080f1969e00d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Button",
+            "sub_fields": [
+                {
+                    "key": "field_6172a19f0859d",
+                    "label": "Button",
+                    "name": "button",
+                    "type": "eu_acf_button",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ]
+        },
+        {
+            "key": "field_618bd7baa8aa2",
+            "label": "Video",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61729da34e37b",
+                        "operator": "==",
+                        "value": "full-height-video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_618bd7c2a8aa3",
+            "label": "Video URL",
+            "name": "video_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1636554732
+}

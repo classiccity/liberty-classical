@@ -1,0 +1,50 @@
+body {
+  color:$dark-gray;
+  font-size:1.2rem;
+  line-height: 1.5;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size:1rem;
+
+  }
+
+  *:focus {
+    outline:3px solid $primary;
+  }
+
+}
+
+a {
+  color: var(--primary-400);
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    color:var(--gray-gray-700);
+  }
+}
+
+// Focus
+a:focus,
+button:focus,
+input:focus {
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+// Screen reader text
+.screen-reader-only {
+  display: none !important;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.#{$ns}hide {
+  display: none;
+}

@@ -1,0 +1,332 @@
+{
+    "key": "group_6357cff55cce8",
+    "title": "Clients: Main",
+    "fields": [
+        {
+            "key": "field_6357d219487f0",
+            "label": "Basics",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6357d0d4cf1c4",
+            "label": "Agenda for Meeting",
+            "name": "agenda_for_meeting",
+            "type": "wysiwyg",
+            "instructions": "Drop in a bullet point list of what people can expect next",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_6357d092cf1c2",
+            "label": "Schedule Link",
+            "name": "schedule_link",
+            "type": "text",
+            "instructions": "Paste in the Calendly link (or other 3rd party service) to allow people to schedule a meeting with you",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6357d05dcf1c1",
+            "label": "Next Scheduled Meeting",
+            "name": "next_scheduled_meeting",
+            "type": "date_time_picker",
+            "instructions": "When is this client's next scheduled meeting with you?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "F j, Y g:i a",
+            "return_format": "F j, Y g:i a",
+            "first_day": 1
+        },
+        {
+            "key": "field_6357d0bdcf1c3",
+            "label": "Presentation Link",
+            "name": "presentation_link",
+            "type": "text",
+            "instructions": "Link to the primary presentation you used to start everything off",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6357d14df2054",
+            "label": "Form ID",
+            "name": "form_id",
+            "type": "number",
+            "instructions": "What is the Form ID that should be populated on this client's page?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "[ninja_forms id=",
+            "append": "]",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_6357d22b487f1",
+            "label": "Previous Sessions",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6357d0e7cf1c5",
+            "label": "Previous Sessions",
+            "name": "previous_sessions",
+            "type": "repeater",
+            "instructions": "Add in the resources for the last meeting(s)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Session",
+            "sub_fields": [
+                {
+                    "key": "field_6357d0f7cf1c6",
+                    "label": "Date",
+                    "name": "date",
+                    "type": "date_picker",
+                    "instructions": "Date of the session",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "d\/m\/Y",
+                    "return_format": "F j, Y",
+                    "first_day": 1
+                },
+                {
+                    "key": "field_6357d100cf1c7",
+                    "label": "Presentation Link",
+                    "name": "presentation_link",
+                    "type": "text",
+                    "instructions": "Third party link to presentation",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6357d108cf1c8",
+                    "label": "Recording Link",
+                    "name": "recording_link",
+                    "type": "text",
+                    "instructions": "Third party link for the final recording",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6357d235487f2",
+            "label": "Wheels",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6357d02bcf1c0",
+            "label": "Full Team Wheel",
+            "name": "team_wheel",
+            "type": "image",
+            "instructions": "Upload the full team wheel hereent Base Fields:",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_636f926688ef4",
+            "label": "Team-based Wheels",
+            "name": "team_based_wheels",
+            "type": "repeater",
+            "instructions": "All the wheels for each of the teams",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add a Team Wheel",
+            "sub_fields": [
+                {
+                    "key": "field_636f928688ef5",
+                    "label": "Wheel Image",
+                    "name": "wheel_image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_636f929388ef6",
+                    "label": "Team Name",
+                    "name": "team_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "75",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "clients"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1668256424
+}

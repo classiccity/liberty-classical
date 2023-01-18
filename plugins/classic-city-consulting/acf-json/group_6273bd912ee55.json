@@ -1,0 +1,51 @@
+{
+    "key": "group_6273bd912ee55",
+    "title": "Block: Logo",
+    "fields": [
+        {
+            "key": "field_6273bda4a4187",
+            "label": "Logo Type",
+            "name": "logo_type",
+            "type": "select",
+            "instructions": "Choose which logo to pull",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light_logo": "Light PNG",
+                "dark_logo": "Dark PNG",
+                "svg": "Vector\/SVG"
+            },
+            "default_value": "svg",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/logo"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651752399
+}

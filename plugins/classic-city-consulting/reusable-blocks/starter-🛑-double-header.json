@@ -1,0 +1,5 @@
+{
+  "__file": "wp_block",
+  "title": "STARTER 🛑 Double Header",
+  "content": "<!-- wp:group {\"className\":\"ccc-double-header\"} -->\n<div class=\"wp-block-group ccc-double-header\"><!-- wp:paragraph {\"className\":\"is-topper\"} -->\n<p class=\"is-topper\">Here is a Tiny Header</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2>Here is the Larger Header</h2>\n<!-- /wp:heading --></div>\n<!-- /wp:group -->"
+}

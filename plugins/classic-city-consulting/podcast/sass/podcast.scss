@@ -1,0 +1,113 @@
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$podcast-vertical-space:3rem;
+
+
+.ypm-podcast {
+
+  &__hero {
+    background-color: var(--primary-color);
+    color:var(--primary-opposite-color);
+    margin-bottom: $podcast-vertical-space;
+    padding:4rem 0;
+
+    h1 {
+      color:var(--light-color);
+    }
+  }
+	&__content {
+		padding-bottom: 3rem;
+	}
+
+  &__content,
+  &__sidebar {
+    > section {
+      margin-bottom: $podcast-vertical-space;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__quote {
+
+    blockquote {
+      margin-bottom: 0;
+      padding:1.5rem;
+
+      p {
+        font-size:1.5em;
+      }
+
+      cite {
+        font-weight: bold;
+      }
+
+    }
+  }
+
+  &__callout {
+    background-color: var(--primary-color);
+    color:var(--primary-opposite-color);
+    padding:1.5rem;
+  }
+
+  &__transcript {
+    box-shadow:3px 3px 15px rgba(0,0,0,.1);
+    height:12rem;
+    overflow-y:scroll;
+    padding:1.5rem;
+  }
+
+  &__button {
+    background-color: var(--accent-color);
+    border:3px solid transparent;
+    color:var(--accent-opposite-color);
+    display: inline-block;
+    padding:.75em 1em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--primary-opposite-color);
+      border-color:var(--primary-color);
+      color:var(--primary-color);
+    }
+  }
+
+
+
+  &__sponsor-list {
+    display:grid;
+    grid-gap:15px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @media screen and (max-width:$breakpoint-sm) {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  &__sponsor {
+    border:3px solid var(--primary-color);
+    padding:1.5rem;
+    text-align: center;
+
+    &-name {
+      color:var(--accent-color);
+      font-size:1.25em;
+      font-weight: bold;
+    }
+
+    &-description {
+      font-size:.85em;
+    }
+
+    &-button {
+      font-size:.85em;
+    }
+  }
+
+}

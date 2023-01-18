@@ -1,0 +1,54 @@
+{
+    "key": "group_629d622e4d09d",
+    "title": "_test",
+    "fields": [
+        {
+            "key": "field_629d6232b8e49",
+            "label": "Days of the Week",
+            "name": "days_of_the_week",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "mon": "Monday",
+                "tue": "Tuesday",
+                "wed": "Wednesday",
+                "thu": "Thursday",
+                "fri": "Friday",
+                "sat": "Saturday",
+                "sun": "Sunday"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1654481544
+}

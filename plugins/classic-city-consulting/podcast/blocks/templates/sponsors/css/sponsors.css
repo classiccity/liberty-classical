@@ -1,0 +1,143 @@
+.cj-font-accent {
+  font-family: "blackstone", Helvetica, Arial, sans-serif;
+}
+
+.sponsors-section {
+  padding: 3rem 0;
+}
+.sponsors-section > h3 {
+  text-transform: none;
+  margin: 1.5rem 0 0;
+  font-size: 2rem !important;
+}
+.sponsors-section.col-1 > h3 {
+  text-align: center;
+}
+.sponsors-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none !important;
+  padding: 1rem 0 !important;
+}
+.sponsors-section__list-item {
+  display: flex;
+  justify-content: center;
+  --gap: 4px;
+  margin: 0 0 var(--gap) !important;
+  width: var(--li-width);
+  min-width: 245px;
+  max-width: 325px;
+}
+.sponsors-section.col-1 .sponsors-section__list-item {
+  --li-width: 100%;
+  max-width: unset;
+}
+.sponsors-section.col-2 .sponsors-section__list-item {
+  --li-width: calc((100% / 2) - var(--gap));
+  max-width: unset;
+}
+.sponsors-section.col-3 .sponsors-section__list-item {
+  --li-width: calc((100% / 3) - var(--gap));
+}
+.sponsors-section.col-4 .sponsors-section__list-item {
+  --li-width: calc((100% / 4) - var(--gap));
+}
+.sponsors-section__list-link {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  text-align: center;
+  border: 2px solid #c3c3c3;
+  background: white;
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s 0.05s;
+  min-height: 325px;
+  max-width: 600px;
+  width: calc(100% - 1rem);
+}
+.sponsors-section__list-link:focus, .sponsors-section__list-link:hover {
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.0015) translateY(-1px);
+  border-color: #666666;
+}
+.sponsors-section__list--featured .sponsors-section__list-link {
+  border-color: var(--cj-secondary-600, #89c4ad);
+}
+.sponsors-section__list--featured .sponsors-section__list-link:focus, .sponsors-section__list--featured .sponsors-section__list-link:hover {
+  border-color: var(--accent-color, #53a284);
+}
+.sponsors-section__list-link > * {
+  max-width: 100%;
+}
+.sponsors-section__list-link > img {
+  padding: 1rem;
+  margin: 0 auto;
+}
+.sponsors-section__list-link > p {
+  text-align: left;
+}
+.sponsors-section__list-link .sponsors-section__name {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "gotham-black", Helvetica, Arial, sans-serif;
+  margin: 1rem 0;
+}
+.sponsors-section__description {
+  padding: 0.5rem;
+  color: #666;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+.sponsors-section__list-item .sponsors-section__button {
+  padding: 0.3em 1em;
+  background-color: var(--accent-color, #53a284);
+  border: 3px solid transparent;
+  color: var(--accent-opposite-color, white);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: max-content;
+  margin: auto auto 0;
+}
+.sponsors-section__list-item .sponsors-section__button:hover, .sponsors-section__list-item .sponsors-section__button:focus {
+  background-color: var(--primary-opposite-color, white);
+  border-color: var(--primary-color, #53a284);
+  color: var(--primary-color, #53a284);
+}
+@media only screen and (max-width: 1094px) {
+  .sponsors-section.col-4 .sponsors-section__list-item {
+    --li-width: calc((100% / 3) - var(--gap));
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sponsors-section.col-4 .sponsors-section__list-item, .sponsors-section.col-3 .sponsors-section__list-item {
+    --li-width: calc((100% / 2) - var(--gap));
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sponsors-section.col-4 .sponsors-section__list-item, .sponsors-section.col-3 .sponsors-section__list-item, .sponsors-section.col-2 .sponsors-section__list-item {
+    --li-width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .sponsors-section__list-link .sponsors-section__name {
+    font-size: 1.85rem;
+  }
+  .sponsors-section__description {
+    font-size: 1.35rem;
+  }
+}
+.editor-styles-wrapper .sponsors-section__description, .editor-styles-wrapper .sponsors-section__list-item .sponsors-section__button {
+  font-size: 1rem;
+}
+.editor-styles-wrapper .sponsors-section__list-link .sponsors-section__name {
+  font-size: 2rem;
+  padding: 1rem 0 0;
+}
+.editor-styles-wrapper .sponsors-section.col-4 .sponsors-section__list-item {
+  min-width: 195px;
+}
+
+/*# sourceMappingURL=sponsors.css.map */
