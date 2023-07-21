@@ -64,3 +64,7 @@
   &.has-huge-font-size { font-size:($size * 1.3); }
 
 }
+
+@mixin heading_shadow() {
+  text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+}

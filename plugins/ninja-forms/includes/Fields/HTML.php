@@ -59,7 +59,14 @@ class NF_Fields_HTML extends NF_Abstracts_Input
      */
     public function localizeField( $field )
     {
-        $field['settings']['default'] = $this->filter_tags($field['settings']['default']);
+        if(isset($field['settings']['default'])){
+            $incomingDefault = $field['settings']['default'];
+        }else{
+            $incomingDefault = '';
+        }
+
+        $field['settings']['default'] = $this->filter_tags($incomingDefault);
+        
         return $field;
     }
 

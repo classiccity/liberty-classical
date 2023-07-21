@@ -1,0 +1,122 @@
+.wp-block-query.is-style-blog-pods {
+
+	ul.wp-block-post-template {
+		gap: 0;
+
+		.wp-block-post {
+			position: relative;
+			aspect-ratio: 3 / 4;
+  			object-fit: contain;
+  			width: 25%;
+  			@include transitions(.3s);
+
+			.wp-block-post-featured-image {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+
+				a {
+					height: 100%;
+					width: 100%;
+				}
+
+				img {
+					object-fit: cover;
+					height: 100%;
+				}
+			}
+
+			> .wp-block-group {
+				text-align: left;
+				padding: 2.1rem;
+				display: flex;
+				flex-direction: column;
+				gap: 1.2rem;
+				justify-content: flex-end;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				color: $background;
+
+				.wp-block-post-title {
+					font-family: $font-header;
+					font-size: 2.2rem;
+					margin: 0;
+					color: $background;
+					text-shadow: $hero-shadow;
+
+					a {
+						color: $background;
+					}
+
+					&:hover {
+						a {
+							color: $background;
+							text-decoration: none;
+						}
+					}
+				}
+
+				> .wp-block-group {
+					height: 0;
+					overflow: hidden;
+  					@include transitions(.3s);
+					display: flex;
+					flex-direction: column;
+					gap: 1.2rem;
+					justify-content: flex-end;
+
+					.wp-block-post-excerpt {
+						p { 
+							font-weight: 300;
+							text-shadow: $hero-shadow;
+							font-size: 1.2rem;
+							line-height: 1.1;
+						}
+					}
+
+					.wp-block-read-more {
+						font-weight: 300;
+						text-shadow: $hero-shadow;
+						margin: 0 !important;	
+						font-size: 1.2rem;
+						line-height: 1.1;
+						color: $background;
+						@include transitions(.3s);
+
+						&::after {
+							content: '\f178';
+							font-family: 'Font Awesome 5 Pro';
+							@include transitions(.15s);
+							margin-left: .5rem;
+
+						}
+
+						&:hover {
+							color: $background;
+							@include transitions(.15s);
+
+
+							&::after {
+								margin-left: 1rem;
+								@include transitions(.15s);
+							}
+						}
+					}
+				}
+			}
+
+			&:hover {
+				> .wp-block-group > .wp-block-group {
+					height: auto;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}

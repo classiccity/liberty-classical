@@ -1,0 +1,77 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "mfb/meta-field-block",
+  "title": "Meta Field Block",
+  "category": "theme",
+  "description": "Display a meta field as a block on frontend, supporting ACF fields.",
+  "attributes": {
+    "textAlign": {
+      "type": "string"
+    },
+    "fieldType": {
+      "type": "string",
+      "default": "meta"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "tagName": {
+      "type": "string",
+      "default": "div"
+    },
+    "displayLayout": {
+      "type": "string",
+      "default": ""
+    },
+    "showOutline": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "color": {
+      "gradients": true,
+      "link": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "radius": true,
+      "style": true,
+      "width": true,
+      "__experimentalDefaultControls": {
+        "color": true,
+        "radius": true,
+        "style": true,
+        "width": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+  "usesContext": ["postId", "postType"],
+  "textdomain": "display-a-meta-field-as-block",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

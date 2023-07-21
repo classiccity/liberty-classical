@@ -1,0 +1,52 @@
+.wp-block-query.is-style-testimonials {
+	
+	ul.wp-block-post-template {
+		align-items: flex-start;
+		
+		li.wp-block-post {
+			background-color: $light;
+			text-align: center;
+			padding: 2.1rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem;
+
+			.wp-block-image {
+				margin: 0 auto;
+				img {
+
+				}
+			}
+
+			.wp-block-post-content {
+
+				p {
+					line-height: 1.2;
+				}
+			}
+
+			.wp-block-post-featured-image {
+				width: 60%;
+				margin: 0 auto;
+				img {
+					border-radius: 100%;
+				}
+			}
+
+			.wp-block-post-title {
+				font-family: $font-header;
+				font-size: 2rem;
+				margin: 0;
+			}
+
+			.wp-block-mfb-meta-field-block {
+
+				.value {
+					color: $secondary;
+					font-style: italic;
+					font-family: $font-header;
+				}
+			}
+		}
+	}
+}

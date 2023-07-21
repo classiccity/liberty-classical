@@ -52,3 +52,46 @@ $button-size: (
     }
   }
 }
+
+
+// Theme Specific Styles
+.wp-block-buttons > .wp-block-button, .gb-block-button {
+  margin: 2rem 0 1rem;
+}
+
+.is-style-main-button, .wp-block-button.is-style-main-button, .is-style-main-button {
+  
+  a, .is-style-main-button---link {
+    background-color: $background;
+    color: $primary !important;
+    text-transform: uppercase;
+    padding: 1.2em 2em 1.2em 2.25em;
+    border-radius: 0;
+    border-left: .5em solid $secondary;
+    background: linear-gradient(to right, $secondary 50%, $background 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    @include transitions(0.3s);
+
+    &:hover {
+      background-position: left bottom;
+      color: $background !important;
+      box-shadow: none;  
+    }
+  }
+}
+
+.gb-button {
+  &.gb-button-size-small {
+    font-size: var(--wp--preset--font-size--small);
+  }
+  &.gb-button-size-medium {
+  font-size: var(--wp--preset--font-size--medium)
+  }
+  &.gb-button-size-large {
+    font-size: var(--wp--preset--font-size--large);
+  }
+  &.gb-button-size-extralarge {
+    font-size: var(--wp--custom--font-size--huge);
+  }
+}

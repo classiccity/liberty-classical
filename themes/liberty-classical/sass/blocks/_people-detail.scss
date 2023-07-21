@@ -1,0 +1,148 @@
+.#{$ns}people-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+
+
+  $self: &;
+
+  $grid-gap: 1rem;
+
+
+  &__person {
+    line-height: 0;
+    position: relative;
+    height: fit-content;
+    @include transitions(.2s);
+
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      height: auto;
+      max-width:100%;
+    }
+
+    #{$self}__meta {
+      padding: 1rem 2rem;
+
+      #{$self}__name {
+        line-height: 1;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+
+      }
+
+      #{$self}__title {
+        text-align: center;
+        line-height: 1;
+        font-family: $font-header;
+        font-size: 1.2rem;
+        font-style: italic;
+        margin-bottom: 0;
+      }
+      .wp-block-button {
+        display: none;
+      }
+    }
+
+    &:hover {
+
+      #{$self}__meta {
+        background-color: $secondary;
+        color: $background;
+        @include transitions(.2s);
+      }
+    }
+  }
+
+
+  &__modal {
+    background-color: rgba(0,0,0,.8);
+    display: none;
+    height:100vh;
+    left: 0;
+    max-width:100vw !important;
+    position: fixed;
+    top: 0;
+    width:100vw;
+    z-index: 999;
+
+    &.is-active {
+      display: block;
+    }
+
+
+    [data-close-person-modal] {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-weight: 300;
+      text-decoration: underline;
+      font-size: .8rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      height: auto;
+      max-width:100%;
+    }
+
+    #{$self}__photo {
+      line-height: 0;
+    }
+
+    #{$self}__details {
+      p, ul {
+        font-size:.8em;
+      }
+    }
+
+    #{$self}__content {
+      background-color: #fff;
+      display: none;
+      left: 50%;
+      width: 80%;
+      height: 60vh;
+      position: absolute;
+      top:50%;
+      transform:translateX(-50%) translateY(-50%);
+
+      &.is-active {
+        display: block;
+      }
+
+      .has-2-columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 2rem;
+        position: relative;
+        flex-wrap: nowrap;
+        height: 100%;
+
+
+        #{$self}__photo {
+          width: 40%;
+
+          img {
+            object-fit: cover;
+            height: 100%;
+          }
+        }
+
+        #{$self}__details {
+          width: 60%;
+          padding: 2rem;
+        }
+      }
+    }
+  }
+}

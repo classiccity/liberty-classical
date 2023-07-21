@@ -153,6 +153,9 @@ class CacheControl {
 
 	public function send_header_cache_control_api( $route ) {
 		try {
+			if ( $this->is_user_logged_in() ) {
+				return;
+			}
 			$namespace              = $this->get_namespace( $route );
 			$namespace_cache_length = $this->db_settings->get( $namespace . '_cache_expires_value' );
 			$namespace_cache_length = apply_filters( 'wpe_cache_namespace_cache_length', $namespace_cache_length, $namespace, $route );

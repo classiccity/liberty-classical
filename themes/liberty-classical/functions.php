@@ -15,11 +15,11 @@ include('inc/class.HeroSection.php');
 //include('inc/acf.field.color-dropdown.php');
 
 // ACF Blocks
-include('blocks/blocks.categories.php');
-include('blocks/blocks.blocks.php');
+include('blocks/load.blocks.php');
 
 // Custom features
 // include('inc/testimonials/load.php');
 
 // Widget areas
 include('inc/widget-areas.php');
+

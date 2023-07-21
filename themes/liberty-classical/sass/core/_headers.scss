@@ -2,8 +2,8 @@ h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6 {
   color:inherit;
   font-family:$font-header;
-  line-height: 1;
-  margin:2.5rem 0 1rem;
+  line-height: 1.2;
+  margin:2.5rem 0 1.75rem;
 
   &:first-child {
     margin-top: 0;
@@ -27,6 +27,38 @@ h1,h2,h3,h4,h5,h6,
   &.has-topper {
     margin-top: 0;
   }
+
+  &.is-style-font-family--body {
+    font-family: $font-body
+  }
+
+  &.is-style-section-heading-blue {
+    @extend .alignfull;
+    margin-bottom: 2rem;
+    padding: 1.5rem calc((100% - var(--wp--style--global--content-size)) / 2);
+    line-height: 1.8;
+    color: $primary-opposite;
+    font-weight: 600;
+    background: $primary;
+    background: linear-gradient(90deg, rgba(19,41,75,1) 80%, rgba(255,255,255,0) 80%);
+    &::before {
+      content: '';
+      height: 55%;
+      border-left: 4px solid $secondary;
+      margin: 0 2rem 0 -2rem;
+      font-size: 1.2em;
+    }
+  }
+
+  &.is-style-section-heading-gold {
+    font-weight: 600;
+    padding: 0 1rem 0 calc((100% - var(--wp--style--global--content-size)) / 2);
+    line-height: 1.8;
+    margin-left: unset !important;
+    margin-right: unset !important;
+    width: fit-content;
+    border-bottom: 4px solid $secondary;
+  }
 }
 
 .is-topper {
@@ -40,7 +72,7 @@ h1,h2,h3,h4,h5,h6,
 
 h1,.h1 {
   font-size:4rem;
-  font-weight: 700;
+  font-weight: 400;
 
   @include header_font_sizes(4rem);
 
@@ -54,7 +86,7 @@ h1,.h1 {
 
 h2,.h2 {
   font-size:3rem;
-  font-weight: 600;
+  font-weight: 400;
 
   @include header_font_sizes(3rem);
 
@@ -67,7 +99,7 @@ h2,.h2 {
 
 h3,.h3 {
   font-size:2rem;
-  font-weight: 600;
+  font-weight: 400;
 
   @include header_font_sizes(2rem);
 

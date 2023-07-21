@@ -3,8 +3,6 @@
 
   $self: &;
 
-  padding: calc(var(--navbar-height) + 5rem) 0 5rem 0;
-
   .wp-block-buttons {
     margin-top: 2rem;
   }
@@ -36,5 +34,28 @@
     border-bottom-right-radius:$border-radius-md;
     min-height:0;
     overflow:hidden;
+  }
+}
+
+
+.wp-block-cover {
+  
+  &.is-style-small-hero {
+    height: 27.5vw;
+    padding: var(--wp--custom--spacing--gap) 0;
+
+    .wp-block-cover__inner-container {
+      width: 100% !important;
+      @include width(content);
+      margin: 0 auto !important;
+
+      h1 {
+        color: $background;
+        text-align: left;
+        width: 100%;
+
+        @include heading_shadow();
+      }
+    }
   }
 }

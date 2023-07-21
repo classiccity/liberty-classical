@@ -153,5 +153,78 @@
 
     });
 
+    
+  
+  // Swapping out Image for Video Embed
+  // Toggling a video placeholder
+  $('[data-bg-video-url]').on('click',function(){
+
+      // Set attribute name
+      var atttribute_name = "data-bg-video-url";
+
+      // Set "this"
+      var current_block = $(this);
+
+      // Get the URL
+      var video_url = $(this).attr(atttribute_name);
+
+      console.log("Video URL: "+video_url);
+
+      // Is it Youtube?
+      if(video_url.includes('youtube') || video_url.includes('you')) {
+
+          console.log("Youtube");
+
+          $.ajax({
+              method: "GET",
+              url: "https://www.youtube.com/oembed",
+              data: {
+                  url: video_url,
+                  autoplay: 1
+              }
+          }).done(function(output) {
+
+              // Make sure we have an iframe
+              if(output.html) {
+                  current_block.append(output.html);
+                  current_block.removeAttr(atttribute_name);
+              }
+
+          });
+
+      }
+
+      // If it's a Vimeo video
+      else if(video_url.includes('vimeo')) {
+
+          console.log("Vimeo");
+
+          $.ajax({
+              method: "GET",
+              url: "https://vimeo.com/api/oembed.json",
+              data: {
+                  url: video_url,
+                  autoplay: true
+              }
+          }).done(function(output) {
+
+              // Make sure we have an iframe
+              if(output.html) {
+                  current_block.append(output.html);
+                  current_block.removeAttr(atttribute_name);
+              }
+
+          });
+
+      }
+
+      else {
+
+          console.log("No video");
+
+      }
+
+  });
+
 
 })( jQuery );

@@ -1,7 +1,7 @@
 <?php
 
 function prefix() {
-	return "LC";
+	return "lc";
 }
 
 
@@ -25,4 +25,17 @@ function lc_blocktheme_setup() {
 }
 endif;
 add_action( 'after_setup_theme', 'lc_blocktheme_setup' );
+
+
+
+
+// Allow (safe) SVG uploads 
+function ccc_enable_svg_upload( $upload_mimes ) {
+    $upload_mimes['svg'] = 'image/svg+xml';
+    $upload_mimes['svgz'] = 'image/svg+xml';
+    return $upload_mimes;
+}
+add_filter( 'upload_mimes', 'ccc_enable_svg_upload', 10, 1 );
+
+
 

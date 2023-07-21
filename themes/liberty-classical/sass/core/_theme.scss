@@ -1,0 +1,159 @@
+@mixin shadow() {
+  box-shadow:var(--wp--custom--style--shadow);
+}
+@mixin width($size) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width:var(--wp--custom--width--#{$size});
+}
+@mixin padding($location,$size) {
+
+  $padding_value:  var(--wp--custom--spacing--#{$size});
+
+  @if $location == left {
+    padding-left: $padding_value;
+  } @else if $location == right {
+    padding-right: $padding_value;
+  } @else if $location == bottom {
+    padding-bottom: $padding_value;
+  } @else if $location == top {
+    padding-top: $padding_value;
+  } @else if $location == horizontal {
+    padding-left: $padding_value;
+    padding-right: $padding_value;
+  } @else if $location == vertical {
+    padding-top: $padding_value;
+    padding-bottom: $padding_value;
+  } @else {
+    padding: $padding_value;
+  }
+
+}
+@mixin margin($location,$size) {
+
+  $margin_value:  var(--wp--custom--spacing--#{$size});
+
+  @if $location == left {
+    margin-left: $margin_value;
+  } @else if $location == right {
+    margin-right: $margin_value;
+  } @else if $location == bottom {
+    margin-bottom: $margin_value;
+  } @else if $location == top {
+    margin-top: $margin_value;
+  } @else if $location == horizontal {
+    margin-left: $margin_value;
+    margin-right: $margin_value;
+  } @else if $location == vertical {
+    margin-top: $margin_value;
+    margin-bottom: $margin_value;
+  } @else {
+    margin: $margin_value;
+  }
+
+}
+@mixin button() {
+  border-radius:var(--wp--custom--button--radius);
+  font-weight: var(--wp--custom--button--weight);
+  line-height: var(--wp--custom--typography--line-height--tiny);
+  padding-top:var(--wp--custom--button--padding--top);
+  padding-right:var(--wp--custom--button--padding--right);
+  padding-bottom:var(--wp--custom--button--padding--bottom);
+  padding-left:var(--wp--custom--button--padding--left);
+  text-decoration: none;
+  text-transform: var(--wp--custom--button--case);
+}
+@mixin transitions($speed:$default-speed) {
+  -o-transition: all $speed ease-in-out;
+  -ms-transition: all $speed ease-in-out;
+  -webkit-transition: all $speed ease-in-out;
+  -moz-transition: all $speed ease-in-out;
+  transition: all $speed ease-in-out;
+}
+@mixin verticalSpaceBetweenElements() {
+  display: flex;
+  gap:calc(var(--wp--custom--spacing--gap)/2);
+  flex-direction: column;
+
+  > * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+@each $width in $widths {
+  .has-#{$width}-width {
+    @include width($width);
+  }
+}
+
+// Background text colors
+@each $color in $colors {
+  .has-#{$color}-background-color {
+    color:var(--wp--custom--style--color--opposite--#{$color});
+  }
+}
+
+// Link color
+a {
+  color:var(--wp--preset--color--primary);
+}
+
+
+// Shadows
+.has-shadow {
+  @include shadow();
+}
+
+// Button
+.is-button,
+.wp-block-button__link {
+  @include button();
+}
+
+// Padding and Margin
+@each $size in $sizes {
+
+  .has-#{$size}-padding {
+    @include padding("all",$size);
+  }
+
+  .has-#{$size}-vertical-padding {
+    @include padding("top",$size);
+    @include padding("bottom",$size);
+  }
+
+  .has-#{$size}-horizontal-padding {
+    @include padding("left",$size);
+    @include padding("right",$size);
+  }
+
+
+  .has-#{$size}-margin {
+    @include margin("all",$size);
+  }
+
+  .has-#{$size}-vertical-margin {
+    @include margin("top",$size);
+    @include margin("bottom",$size);
+  }
+
+  .has-#{$size}-horizontal-margin {
+    @include margin("left",$size);
+    @include margin("right",$size);
+  }
+
+}
+
+
+// Headers
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,.h6 {
+  font-family:var(--wp--preset--font-family--header);
+  line-height: var(--wp--custom--typography--line-height--tiny);
+}

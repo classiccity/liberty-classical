@@ -54,7 +54,7 @@ if(isset($fields['people']) && is_array($fields['people']) && !empty($fields['pe
         ?>
 
             <div class="<?=$prefix?>__content" data-person-modal="<?=$person['id']?>">
-                <span data-close-person-modal><i class="fal fa-times-circle"></i></span>
+                
 
                 <div class="<?=$modal_container_class?>">
                     <?php if($person['image']) { ?>
@@ -74,6 +74,7 @@ if(isset($fields['people']) && is_array($fields['people']) && !empty($fields['pe
                         <?php } ?>
                     </div>
                 </div>
+                <span data-close-person-modal>CLOSE</i></span>
 
             </div>
 

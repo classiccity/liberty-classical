@@ -1,19 +1,25 @@
 $prefix: 'lc';
 $ns: $prefix+'-';
 
-$primary: #00ADEF;
-$secondary: #EFB200;
-$tertiary: #B6563F;
-$light-gray: #D7F2FD;
-$dark-gray: #3F4648;
-$dark: #002736;
+$sizes: "gap","small","medium","large","outer";
+$widths: "thin","content","wide","full";
+$colors: "primary","secondary","light","dark","foreground","background";
+$breakpoints:("xs":0, "sm":"576px","md":"768px","lg":"992px","xl":"1200px","xxl":"1400px");
+$default-speed:250ms;
 
-$primary-opposite: #FFF;
-$secondary-opposite: #FFF;
-$tertiary-opposite: #FFF;
-$light-gray-opposite: $dark;
-$dark-gray-opposite: $dark;
-$dark-opposite: #FFF;
+
+$primary: var(--wp--preset--color--primary);
+$secondary: var(--wp--preset--color--secondary);
+$light: var(--wp--preset--color--light);
+$dark: var(--wp--preset--color--dark);
+$foreground: var(--wp--preset--color--foreground);
+$background: var(--wp--preset--color--background);
+$dark-gray: $dark;
+
+$primary-opposite: $background;
+$secondary-opposite: $dark;
+$light-opposite: $primary;
+$dark-opposite: $light;
 
 $high: $primary;
 $medium: rgba($primary,.5);
@@ -23,17 +29,13 @@ $low: rgba($primary,.2);
 $colors: (
         primary: $primary,
         secondary: $secondary,
-        tertiary: $tertiary,
-        light-gray: $light-gray,
-        dark-gray: $dark-gray,
+        light: $light,
         dark: $dark
 );
 $colors-opposite: (
         primary: $primary-opposite,
         secondary: $secondary-opposite,
-        tertiary: $tertiary-opposite,
-        light-gray: $light-gray-opposite,
-        dark-gray: $dark-gray-opposite,
+        light: $light-opposite,
         dark: $dark-opposite
 );
 
@@ -42,21 +44,17 @@ $colors-combined: (
   ('primary-opposite',$primary-opposite,$primary),
   ('secondary',$secondary,$secondary-opposite),
   ('secondary-opposite',$secondary-opposite,$secondary),
-  ('tertiary',$tertiary,$tertiary-opposite),
-  ('tertiary-opposite',$tertiary-opposite,$tertiary),
-  ('light-gray',$light-gray,$light-gray-opposite),
-  ('light-gray-opposite',$light-gray-opposite,$light-gray),
-  ('dark-gray',$dark-gray,$dark-gray-opposite),
-  ('dark-gray-opposite',$dark-gray-opposite,$dark-gray),
   ('dark',$dark,$dark-opposite),
   ('dark-opposite',$dark-opposite,$dark),
 );
 
-$font-header: "Dosis",Helvetica,Arial,sans-serif;
-$font-body: Helvetica,Arial,sans-serif;
-$font-accent: Tahoma,Helvetica,Arial,sans-serif;
+$font-header: var(--wp--preset--font-family--header);
+$font-body: var(--wp--preset--font-family--body);
+$font-accent: var(--wp--preset--font-family--header);
 
 $vertical-top-margin:6rem;
+
+$hero-shadow: 2px 2px 10px rgba(0,0,0,.4);
 
 $default-speed:250ms;
 

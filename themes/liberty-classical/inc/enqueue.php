@@ -25,4 +25,18 @@
         add_editor_style( get_template_directory_uri().'/css/web.css' ); // tries to include style-editor.css directly from your theme folder
 
     }
+
+
+    // Add JS for removing Default Button Styles for Core/Button block
+    function enqueue_block_editor_scripts() {
+      wp_enqueue_script(
+          'theme-block-editor-js',
+          get_stylesheet_directory_uri() . '/js/remove-block-styles.js',
+          array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ), // specify dependencies to avoid race condition
+          '1.0',
+          true
+      );
+    }
+    add_action('enqueue_block_editor_assets', 'enqueue_block_editor_scripts');
+
 ?>

@@ -1,0 +1,73 @@
+.#{$ns}container {
+
+  $self: &;
+
+  &.has-background-image {
+    position: relative;
+
+    img {
+      height: 100%;
+      left: 0;
+      object-fit: cover;
+      object-position: center;
+      opacity:var(--wp--custom--style--opacity);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+    }
+
+    #{$self}__inner {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &.has-sheen,
+  &.has-fade {
+    position: relative;
+
+    &:after {
+      background:linear-gradient(45deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+      content:"";
+      display: block;
+      height:100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width:100%;
+      z-index: 0;
+    }
+
+    #{$self}__inner {
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+  &.has-sheen:after {
+    background:linear-gradient(45deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%);
+  }
+  &.has-fade:after {
+    background:linear-gradient(45deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+  }
+
+  &.has-gap-padding {
+    padding: var(--wp--custom--spacing--gap) 0;
+  }
+
+  &.has-small-padding {
+    padding: var(--wp--custom--spacing--small) 0;
+  }
+
+  &.has-dark-background-color {
+    a {
+      color: var(--wp--preset--color--dark-opposite);
+    }
+  }
+
+  .wp-block-columns {
+    margin-bottom: 0;
+  }
+
+}

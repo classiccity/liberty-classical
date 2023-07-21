@@ -4,11 +4,14 @@
 
 // --------------------------- Vendor
 @import 'vendor/gutenberg';
+@import 'vendor/ninja-forms';
 
 
 @import '_generic';
 
+
 // --------------------------- Core
+@import 'core/theme';
 @import 'core/buttons';
 @import 'core/content';
 @import 'core/fonts';
@@ -22,6 +25,19 @@
 @import 'core/separator';
 @import 'core/spacing';
 @import 'core/video';
+
+
+
+// --------------------------- Blocks
+@import 'blocks/_container';
+@import 'blocks/_columns';
+@import 'blocks/video-with-image';
+@import 'blocks/query-block-testimonial';
+@import 'blocks/query-block-blog-pods';
+@import 'blocks/icon-pods';
+@import 'blocks/people-detail';
+@import 'blocks/cover';
+@import 'blocks/separator';
 
 // --------------------------- Pages
 @import 'pages/style-guide';

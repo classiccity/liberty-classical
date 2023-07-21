@@ -1,0 +1,40 @@
+@mixin gradient($direction: 90deg) {
+  background: linear-gradient($direction, rgba(255,255,255,0) 0%, rgba(19,41,75,0.69) 70%, rgba(19,41,75,1) 100%);
+}
+
+.wp-block-cover {
+	
+	&.is-style-large-cta-right, &.is-style-large-cta-left {
+		padding: 0;
+
+		.wp-block-cover__inner-container {
+			background: $primary;
+
+			.#{$ns}container {
+
+				h2 {
+					margin: 1rem 0;
+
+				}
+			}
+		}
+	}
+
+	&.is-style-large-cta-left {
+
+		.wp-block-cover__inner-container {
+
+			@include gradient(250deg);
+		}
+	}
+
+	&.is-style-large-cta-right {
+
+		.wp-block-cover__inner-container {
+
+			@include gradient(90deg);
+		}
+	}
+}
+
+

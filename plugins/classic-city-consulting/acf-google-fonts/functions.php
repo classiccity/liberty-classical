@@ -388,15 +388,15 @@ function acfgfs_action_get_font_details() {
 }
 
 
-/**
- * Add fonts to font list
- * 
- */
-add_filter( 'acfgfs/font_dropdown_array', 'my_font_list' );
-function my_font_list( $fonts ) {
-    $fonts = array(
-        'Raleway' => 'Libre Baskerville',
-        'Lato' => 'Lato'
-    );
-    return $fonts;
-}
+// /**
+//  * Add fonts to font list
+//  * 
+//  */
+// add_filter( 'acfgfs/font_dropdown_array', 'my_font_list' );
+// function my_font_list( $fonts ) {
+//     $fonts = array(
+//         'Libre Baskerville' => '"Libre Baskerville"',
+//         'Lato' => '"Lato"'
+//     );
+//     return $fonts;
+// }

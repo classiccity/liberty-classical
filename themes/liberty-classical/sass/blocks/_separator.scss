@@ -1,0 +1,10 @@
+.wp-block-separator {
+    
+    &.is-style-vertical {
+            color: transparent !important;
+            border-left: 3px solid $secondary;
+            height: 62px !important;
+            margin: 2rem auto;
+            width: 0 !important;
+    }
+}

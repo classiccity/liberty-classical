@@ -1,0 +1,53 @@
+.nf-form-cont {
+	
+	.nf-form-content{
+
+		.nf-field-container {
+			margin-bottom: 1rem;
+
+			.nf-field {
+				width: 80%;
+
+				.nf-field-label {
+					display: none;
+				}
+				
+				.nf-field-element {
+
+					.nf-element {
+						border-radius: 0;
+
+						&[type="submit"] {
+							background-color: $background;
+						    color: $primary !important;
+						    text-transform: uppercase;
+						    padding: 1.2em 2em 1.2em 2.25em;
+						    border-radius: 0;
+						    border-left: .5em solid $secondary;
+						    background: linear-gradient(to right, $secondary 50%, $background 50%);
+						    background-size: 200% 100%;
+						    background-position: right bottom;
+						    @include transitions(0.3s);
+						    line-height: 1;
+						    font-weight: 600;
+						    font-size: 1rem;
+						    height: auto;
+
+						    &:hover {
+						      background-position: left bottom;
+						      color: $background !important;
+						      box-shadow: none;  
+						    }
+						}
+					}
+				}
+			}
+
+			.nf-after-field {
+				.nf-error-required-error {
+					display: none;
+				}
+			}
+		}
+	}
+}

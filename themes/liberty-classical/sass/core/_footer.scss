@@ -1,8 +1,9 @@
 footer {
-  background-color: var(--gray-gray-800);
-  color: var(--gray-gray-800-opposite);
-  font-size:.8rem;
-  padding:3rem 0;
+  font-size: 1rem;
+  li {
+    line-height: 1;
+
+  }
 
   .menu {
     margin: 0;
@@ -16,6 +17,19 @@ footer {
   }
 
   h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
-    font-size:1.25em;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .#{$ns}footer-columns {
+    gap: var(--wp--custom--spacing--small);
+
+    h2 {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .#{$ns}footer-bottom-row {
+    gap: var(--wp--custom--spacing--small);
   }
 }
