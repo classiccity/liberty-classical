@@ -1,5 +1,8 @@
 .#{$ns}icon-pods {
-	display: flex;
+	@media screen and (min-width: 800px) {
+		display: flex;
+	}
+	
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
